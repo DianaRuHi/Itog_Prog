@@ -1,0 +1,208 @@
+diana@diana-VirtualBox:~$ ls
+
+ hw2                                 snap       Видео         Музыка
+
+ mysql-apt-config_0.8.14-1_all.deb   t1         Документы     Общедоступные
+
+ nano.62356.save                     t2         Загрузки     'Рабочий стол'
+
+ shared                              test.txt   Изображения   Шаблоны
+
+diana@diana-VirtualBox:~$ cat > pets.txt
+
+dogs  
+
+cats
+
+hamsters
+
+diana@diana-VirtualBox:~$ cat > pack-animals.txt
+
+horses
+
+cammels
+
+donkeys
+
+diana@diana-VirtualBox:~$ cat pets.txt pack-animals.txt > allanimals.txt
+
+diana@diana-VirtualBox:~$ cat allanimals.txt
+
+dogs
+
+cats
+
+hamsters
+
+horses
+
+cammels
+
+donkeys
+
+diana@diana-VirtualBox:~$ mv allanimals.txt HumanFriends.txt
+
+diana@diana-VirtualBox:~$ 
+
+diana@diana-VirtualBox:~$ mkdir animalsDir
+
+diana@diana-VirtualBox:~$ mv HumanFriends.txt animalsDir
+
+diana@diana-VirtualBox:~$ ls
+
+ animalsDir                          pack-animals.txt   t1         Документы     Общедоступные
+
+ hw2                                 pets.txt           t2         Загрузки     'Рабочий стол'
+
+ mysql-apt-config_0.8.14-1_all.deb   shared             test.txt   Изображения   Шаблоны
+
+ nano.62356.save                     snap               Видео      Музыка
+
+diana@diana-VirtualBox:~$ 
+
+diana@diana-VirtualBox:~$ 
+
+diana@diana-VirtualBox:~$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 5072E1F5
+
+[sudo] пароль для diana: 
+
+Warning: apt-key is deprecated. Manage keyring files in trusted.gpg.d instead (see apt-key(8)).
+
+Executing: /tmp/apt-key-gpghome.kMXwf4Sh00/gpg.1.sh --keyserver keyserver.ubuntu.com --recv-keys 5072E1F5
+
+gpg: ключ 8C718D3B5072E1F5: 6 повторных подписей удалено
+
+gpg: ключ 8C718D3B5072E1F5: импортирован открытый ключ "MySQL Release Engineering <mysql-build@oss.oracle.com>"
+
+gpg: Всего обработано: 1
+
+gpg:               импортировано: 1
+
+diana@diana-VirtualBox:~$ 
+
+diana@diana-VirtualBox:~$ sudo apt install dirmngr ca-certificates ca-certificates software-properties-common apt-transport-https curl lsb-release -y
+
+Чтение списков пакетов… Готово
+
+Построение дерева зависимостей… Готово
+
+Чтение информации о состоянии… Готово         
+
+Уже установлен пакет lsb-release самой новой версии (11.1.0ubuntu4).
+
+Уже установлен пакет ca-certificates самой новой версии (20230311ubuntu0.22.04.1).
+
+Уже установлен пакет curl самой новой версии (7.81.0-1ubuntu1.15).
+
+Уже установлен пакет dirmngr самой новой версии (2.2.27-3ubuntu2.1).
+
+dirmngr помечен как установленный вручную.
+
+Уже установлен пакет apt-transport-https самой новой версии (2.4.11).
+
+Следующие пакеты устанавливались автоматически и больше не требуются:
+
+  bridge-utils python3-attr python3-docker python3-dockerpty python3-docopt python3-dotenv python3-jsonschema
+
+  python3-pyrsistent python3-texttable python3-websocket ubuntu-fan
+
+Для их удаления используйте «sudo apt autoremove».
+
+Будут установлены следующие дополнительные пакеты:
+
+  python3-software-properties software-properties-gtk
+
+Следующие пакеты будут обновлены:
+
+  python3-software-properties software-properties-common software-properties-gtk
+
+Обновлено 3 пакетов, установлено 0 новых пакетов, для удаления отмечено 0 пакетов, и 262 пакетов не обновлено.
+
+Необходимо скачать 114 kB архивов.
+
+После данной операции объём занятого дискового пространства возрастёт на 0 B.
+
+Пол:1 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 software-properties-common all 0.99.22.9 [14,1 kB]
+
+Пол:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 software-properties-gtk all 0.99.22.9 [71,3 kB]
+
+Пол:3 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3-software-properties all 0.99.22.9 [28,8 kB]
+
+Получено 114 kB за 0с (896 kB/s)
+
+N: Игнорируется файл «mysql-apt-config_0.8.24-1_all.deb» в каталоге «/etc/apt/sources.list.d/», так как он имеет неправильное расширение
+
+N: Игнорируется файл «index.html?id=515363» в каталоге «/etc/apt/sources.list.d/», так как он имеет неправильное расширение
+
+(Чтение базы данных … на данный момент установлено 192696 файлов и каталогов.)
+
+Подготовка к распаковке …/software-properties-common_0.99.22.9_all.deb …
+
+Распаковывается software-properties-common (0.99.22.9) на замену (0.99.22.8) …
+
+Подготовка к распаковке …/software-properties-gtk_0.99.22.9_all.deb …
+
+Распаковывается software-properties-gtk (0.99.22.9) на замену (0.99.22.8) …
+
+Подготовка к распаковке …/python3-software-properties_0.99.22.9_all.deb …
+
+Распаковывается python3-software-properties (0.99.22.9) на замену (0.99.22.8) …
+
+Настраивается пакет python3-software-properties (0.99.22.9) …
+
+Настраивается пакет software-properties-common (0.99.22.9) …
+
+Настраивается пакет software-properties-gtk (0.99.22.9) …
+
+Обрабатываются триггеры для dbus (1.12.20-2ubuntu4.1) …
+
+Обрабатываются триггеры для shared-mime-info (2.1-2) …
+
+Обрабатываются триггеры для mailcap (3.70+nmu1ubuntu1) …
+
+Обрабатываются триггеры для desktop-file-utils (0.26-1ubuntu3) …
+
+Обрабатываются триггеры для hicolor-icon-theme (0.17-2) …
+
+Обрабатываются триггеры для gnome-menus (3.36.0-1ubuntu3) …
+
+Обрабатываются триггеры для libglib2.0-0:amd64 (2.72.4-0ubuntu2.2) …
+
+Обрабатываются триггеры для man-db (2.10.2-1) …
+
+N: Игнорируется файл «mysql-apt-config_0.8.24-1_all.deb» в каталоге «/etc/apt/sources.list.d/», так как он имеет неправильное расширение
+
+N: Игнорируется файл «index.html?id=515363» в каталоге «/etc/apt/sources.list.d/», так как он имеет неправильное расширение
+
+diana@diana-VirtualBox:~$ sudo apt install mysql-server
+
+Чтение списков пакетов… Готово
+
+Построение дерева зависимостей… Готово
+
+Чтение информации о состоянии… Готово         
+
+Некоторые пакеты не могут быть установлены. Возможно, то, что вы просите,
+
+неосуществимо, или же вы используете нестабильную версию дистрибутива, где
+
+запрошенные вами пакеты ещё не созданы или были удалены из Incoming.
+
+Следующая информация, возможно, вам поможет:
+
+
+
+Следующие пакеты имеют неудовлетворённые зависимости:
+
+ mysql-common : Конфликтует: mysql-server-8.0 но 8.0.36-0ubuntu0.22.04.1 должен быть установлен
+
+ mysql-server-8.0 : Зависит: mysql-client-8.0 (>= 8.0.36-0ubuntu0.22.04.1) но он не может быть установлен
+
+                    Зависит: mysql-server-core-8.0 (= 8.0.36-0ubuntu0.22.04.1) но он не может быть установлен
+
+N: Игнорируется файл «mysql-apt-config_0.8.24-1_all.deb» в каталоге «/etc/apt/sources.list.d/», так как он имеет неправильное расширение
+
+N: Игнорируется файл «index.html?id=515363» в каталоге «/etc/apt/sources.list.d/», так как он имеет неправильное расширение
+
+diana@diana-VirtualBox:~$ sudo dpkg --remove mysql-server
+
